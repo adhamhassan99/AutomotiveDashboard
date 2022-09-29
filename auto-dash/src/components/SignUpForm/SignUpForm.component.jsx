@@ -6,7 +6,6 @@ import "./SignUpForm.styles.scss";
 import {
   createAuthUserWithEmailAndPassword,
   createUserDocumentFromAuth,
-  signInAuthUserWithEmailAndPassword,
 } from "../../Utils/Firebase/Firebase.utils";
 
 import FormInput from "../FormInput/FormInput.component";

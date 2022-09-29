@@ -1,12 +1,15 @@
 import React from "react";
 import { useState } from "react";
-import { signInAuthUserWithEmailAndPassword } from "../../Utils/Firebase/Firebase.utils";
+import { useSelector, useDispatch } from "react-redux";
+import { setUser } from "../../features/user/userSlice";
 
-import "./SignInForm.styles.scss";
+import { signInAuthUserWithEmailAndPassword } from "../../Utils/Firebase/Firebase.utils";
 
 import CustomButton from "../CustomButton/CustomButton.component";
 import FormInput from "../FormInput/FormInput.component";
 import RememberMe from "../RememberMe/RememberMe.component";
+
+import "./SignInForm.styles.scss";
 
 const defaultFields = {
   email: "",
@@ -14,6 +17,10 @@ const defaultFields = {
 };
 
 const SignInForm = () => {
+  const userValue = useSelector((state) => state.user.user);
+  const dispatch = useDispatch();
+  console.log(userValue);
+
   const [formFields, setFormFields] = useState(defaultFields);
   const { email, password } = formFields;
 
@@ -30,7 +37,11 @@ const SignInForm = () => {
     event.preventDefault();
 
     try {
-      await signInAuthUserWithEmailAndPassword(email, password);
+      const { user } = await signInAuthUserWithEmailAndPassword(
+        email,
+        password
+      );
+      dispatch(setUser(user.json()));
       resetFormFields();
     } catch (error) {
       console.log(error);
