@@ -1,13 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import Link from "react-router-dom";
-
 import { signInAuthUserWithEmailAndPassword } from "../../Utils/Firebase/Firebase.utils";
 
 import "./SignInForm.styles.scss";
 
 import CustomButton from "../CustomButton/CustomButton.component";
 import FormInput from "../FormInput/FormInput.component";
+import RememberMe from "../RememberMe/RememberMe.component";
 
 const defaultFields = {
   email: "",
@@ -40,7 +39,7 @@ const SignInForm = () => {
 
   return (
     <div className="sign-in-container">
-      <form onSubmit={handleSubmit}>
+      <form className="form-container" onSubmit={handleSubmit}>
         <div className="form-input-container">
           <FormInput
             type="email"
@@ -59,12 +58,11 @@ const SignInForm = () => {
             onChange={handleChange}
             required
             label="Password"
-            placeholder="**********"
+            placeholder="Password"
           />
         </div>
-        <CustomButton signInProvider="primary" onClick={handleSubmit}>
-          Sign In
-        </CustomButton>
+        <RememberMe />
+        <CustomButton signInProvider="primary">Sign In</CustomButton>
       </form>
     </div>
   );

@@ -13,7 +13,7 @@ export default function CustomButton({
   ...otherProps
 }) {
   return (
-    <button className={`${signInTypes[signInProvider]} button-container`}>
+    <button {...otherProps} className={`${signInTypes[signInProvider]} button`}>
       {children}
     </button>
   );

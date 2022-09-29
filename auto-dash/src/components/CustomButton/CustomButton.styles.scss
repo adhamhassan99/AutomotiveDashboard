@@ -1,25 +1,23 @@
 $prim-grey: #e0e4e7;
 $prim-dark: #242731;
 $prim-purp: #a162f7;
+$google-blue: #357ae8;
+$facebook-blue:#4776D0;
 
-
-
-.button-container {
+.button { 
+    border-radius: 8px;
+    letter-spacing: 1px;
     width: auto;
-    height: 50px;
-    letter-spacing: 0.5px;
-    line-height: 50px;
-    padding: 0 35px 0 35px;
-    font-size: 15px;
+    padding: 0.5% 15px;
+    line-height:50px;
+    font-size: 1.2rem;
     background-color: black;
     color: white;
-    text-transform: uppercase;
-    font-family: 'Open Sans Condensed';
-    font-weight: bolder;
+    font-weight: 600;
+    font-family: 'DM Sans';
     border: none;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
+   
   
     &:hover {
       background-color: white;
@@ -28,12 +26,26 @@ $prim-purp: #a162f7;
     }
   
     &.Google {
-      background-color: white;
+      background: transparent;
       color: black;
-      border: 1px solid black;
+      border: 1px solid lightgray;
+      font-weight: 400;
+      font-size: 1rem;
+      
   
       &:hover {
-        background-color: #357ae8;
+        background-color:$google-blue;
+        color: white;
+      }
+    }
+    &.Facebook {
+      background-color: $facebook-blue;
+      color: white;
+      font-weight: 400;
+      font-size: 1rem;
+  
+      &:hover {
+        background-color:$google-blue;
         border: none;
       }
     }
@@ -45,7 +57,9 @@ $prim-purp: #a162f7;
         border: none;
     
         &:hover {
-          background-color: #357ae8;
+          color: $prim-purp;
+          background-color: white;
+
           border: none;
         }
       }
