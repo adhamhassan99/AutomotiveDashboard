@@ -1,0 +1,35 @@
+$prim-purple:#A162F7;
+
+
+
+.metric-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $prim-purple;
+    height: 300px;
+    width: 250px;
+    border-radius: 15px;
+    
+   .icon{
+    flex-grow: 0.5;
+    margin-top: 20px;
+    
+   }
+
+    .title{
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: white;
+        flex-grow: 2;
+    }
+
+    .perc{
+        flex-grow: 2;
+        color: white;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+}
+

@@ -1,12 +1,12 @@
 import React from "react";
 
-import "./HomePage.styles.scss";
+import "./SignInPage.styles.scss";
 
 import GetStarted from "../../components/GetStarted/GetStarted.component";
 
 import SignInForm from "../../components/SignInForm/SignInForm.component";
 
-const HomePage = () => {
+const SignInPage = () => {
   return (
     <div className="homepage-container">
       <GetStarted linkUrl="auth/signup" linkText="Sign up" />
@@ -14,4 +14,4 @@ const HomePage = () => {
     </div>
   );
 };
-export default HomePage;
+export default SignInPage;

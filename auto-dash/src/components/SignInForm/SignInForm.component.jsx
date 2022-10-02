@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { setUser } from "../../features/user/userSlice";
+import { useDispatch, batch } from "react-redux";
+import { setUID, setisLoggedIn } from "../../features/user/userSlice";
 
 import { signInAuthUserWithEmailAndPassword } from "../../Utils/Firebase/Firebase.utils";
 
@@ -17,9 +17,10 @@ const defaultFields = {
 };
 
 const SignInForm = () => {
-  const userValue = useSelector((state) => state.user.user);
+  // const loggedIn = useSelector((state) => state.user.isLoggedIn);
+  // const uid = useSelector((state) => state.user.uid);
+
   const dispatch = useDispatch();
-  console.log(userValue);
 
   const [formFields, setFormFields] = useState(defaultFields);
   const { email, password } = formFields;
@@ -41,7 +42,11 @@ const SignInForm = () => {
         email,
         password
       );
-      dispatch(setUser(user.json()));
+      batch(() => {
+        dispatch(setUID(user.uid));
+        dispatch(setisLoggedIn(true));
+      });
+
       resetFormFields();
     } catch (error) {
       console.log(error);

@@ -7,7 +7,7 @@ import "./SignUp.styles.scss";
 export default function SignUp() {
   return (
     <div className="sign-up-page-container">
-      <GetStarted linkUrl="auth/signin" linkText="Sign up" />
+      <GetStarted linkUrl="auth/signin" linkText="Sign in" />
       <SignUpForm />
     </div>
   );

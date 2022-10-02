@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import { useDispatch, batch } from "react-redux";
+import { setUID, setisLoggedIn } from "../../features/user/userSlice";
 
 import "./SignUpForm.styles.scss";
 
@@ -20,6 +22,7 @@ const defaultFields = {
 };
 
 const SignUpForm = () => {
+  const dispatch = useDispatch();
   const [formFields, setFormFields] = useState(defaultFields);
   const { firstName, lastName, email, password } = formFields;
 
@@ -40,6 +43,10 @@ const SignUpForm = () => {
         email,
         password
       );
+      batch(() => {
+        dispatch(setUID(user.uid));
+        dispatch(setisLoggedIn(true));
+      });
       if (!user.displayName) {
         user.displayName = `${firstName} ${lastName}`;
       }
