@@ -20,5 +20,6 @@ export const userSlice = createSlice({
 
 // Action creators are generated for each case reducer function
 export const { setUID, setisLoggedIn } = userSlice.actions;
-
+export const getUserStatus = (state) => state.user.isLoggedIn;
+export const getUID = (state) => state.user.uid;
 export default userSlice.reducer;
