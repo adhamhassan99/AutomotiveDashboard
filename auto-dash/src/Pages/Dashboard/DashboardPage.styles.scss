@@ -1,4 +1,24 @@
 .dashboard-container{
     display: flex;
+
+    .main-section{
+        display: flex;
+        gap: 25px;
+        flex-direction: column;
+        width: -webkit-fill-available;
+        height: 100vh;
+
+        .statistics-section{
+            display: flex;
+            justify-content: center;
+            gap: 8%;
+        }
+    }
     
+
+    .rcmnd-cars{
+        display: flex;
+        justify-content: space-evenly;
+          
+    }
 }

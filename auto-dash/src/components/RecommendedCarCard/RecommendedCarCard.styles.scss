@@ -1,0 +1,57 @@
+$card1:#E1DFA4;
+$card2:#E3ECF1 ;
+$card3:#F4E3E5;
+
+.recommend-container{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 24%;
+    border-radius: 15px;
+    padding: 10px 20px;
+    align-items: center;
+    background-color: white;
+
+    h1{
+        align-self: flex-start;
+        font-size: 1.5rem;
+    }
+
+    .card-header{
+        display: flex;
+        gap: 15px;
+        align-self: flex-start;
+        align-items: center;
+        margin-bottom: 5%;
+        font-weight: 500;
+
+        .icon-arrow{
+            opacity: 50%;
+        }
+    }
+
+    
+    .car-details{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        color: grey;
+        font-size: 0.9rem;
+        
+
+        .features{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+    
+    &:nth-child(1){
+        background-color: $card1;
+    }
+    &:nth-child(2){
+        background-color: $card2;
+    }
+    &:nth-child(3){
+        background-color: $card3;
+    }
+}

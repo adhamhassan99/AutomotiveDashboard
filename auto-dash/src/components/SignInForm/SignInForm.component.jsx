@@ -3,6 +3,9 @@ import { useState } from "react";
 import { useDispatch, batch } from "react-redux";
 import { setUID, setisLoggedIn } from "../../features/user/userSlice";
 
+import { useSelector } from "react-redux";
+import { Navigate } from "react-router-dom";
+
 import { signInAuthUserWithEmailAndPassword } from "../../Utils/Firebase/Firebase.utils";
 
 import CustomButton from "../CustomButton/CustomButton.component";
@@ -17,8 +20,8 @@ const defaultFields = {
 };
 
 const SignInForm = () => {
-  // const loggedIn = useSelector((state) => state.user.isLoggedIn);
-  // const uid = useSelector((state) => state.user.uid);
+  const loggedIn = useSelector((state) => state.user.isLoggedIn);
+  const uid = useSelector((state) => state.user.uid);
 
   const dispatch = useDispatch();
 
@@ -53,35 +56,39 @@ const SignInForm = () => {
     }
   };
 
-  return (
-    <div className="sign-in-container">
-      <form className="form-container" onSubmit={handleSubmit}>
-        <div className="form-input-container">
-          <FormInput
-            type="email"
-            name="email"
-            value={email}
-            onChange={handleChange}
-            required
-            label="Email"
-            placeholder="email@gmail.com"
-          />
+  if (loggedIn) {
+    return <Navigate replace to="/dashboard" state={[loggedIn, uid]} />;
+  } else {
+    return (
+      <div className="sign-in-container">
+        <form className="form-container" onSubmit={handleSubmit}>
+          <div className="form-input-container">
+            <FormInput
+              type="email"
+              name="email"
+              value={email}
+              onChange={handleChange}
+              required
+              label="Email"
+              placeholder="email@gmail.com"
+            />
 
-          <FormInput
-            type="password"
-            name="password"
-            value={password}
-            onChange={handleChange}
-            required
-            label="Password"
-            placeholder="Password"
-          />
-        </div>
-        <RememberMe />
-        <CustomButton signInProvider="primary">Sign In</CustomButton>
-      </form>
-    </div>
-  );
+            <FormInput
+              type="password"
+              name="password"
+              value={password}
+              onChange={handleChange}
+              required
+              label="Password"
+              placeholder="Password"
+            />
+          </div>
+          <RememberMe />
+          <CustomButton signInProvider="primary">Sign In</CustomButton>
+        </form>
+      </div>
+    );
+  }
 };
 
 export default SignInForm;

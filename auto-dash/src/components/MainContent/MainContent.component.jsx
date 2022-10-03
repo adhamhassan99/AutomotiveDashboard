@@ -14,6 +14,7 @@ const MainContent = () => {
             icon={e.icon}
             title={e.title}
             percentage={e.percentage}
+            chart={e.chart}
           />
         ))}
       </div>

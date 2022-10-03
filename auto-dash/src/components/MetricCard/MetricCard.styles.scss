@@ -3,14 +3,33 @@ $prim-purple:#A162F7;
 
 
 .metric-card-container{
+
+    &:nth-child(1){
+        background-color: $prim-purple;
+        
+        .title{
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: white;
+            flex-grow: 2;
+        }
+    
+        .perc{
+            flex-grow: 2;
+            color: white;
+            font-weight: 500;
+            font-size: 1.4rem;
+        }
+    }
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: $prim-purple;
+    background-color: white;
     height: 300px;
-    width: 250px;
+    width: 260px;
     border-radius: 15px;
+    position: relative;
     
    .icon{
     flex-grow: 0.5;
@@ -21,15 +40,19 @@ $prim-purple:#A162F7;
     .title{
         font-size: 1.4rem;
         font-weight: 500;
-        color: white;
+        color: black;
         flex-grow: 2;
     }
 
     .perc{
         flex-grow: 2;
-        color: white;
+        color: black;
         font-weight: 500;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+    }
+    .chart{
+        position: absolute;
+        bottom: 25px;
     }
 }
 
