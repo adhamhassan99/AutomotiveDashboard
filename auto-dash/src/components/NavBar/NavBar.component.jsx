@@ -13,7 +13,7 @@ const NavBar = ({ notf, imageUrl }) => {
         <input type="text" placeholder="Search or type" />
       </div>
       <div className="prof-notif-container">
-        {{ notf } ? <NotificationOn /> : <NotificationOff />}
+        {notf ? <NotificationOn /> : <NotificationOff />}
         <img src={`${imageUrl}`} alt="" />
       </div>
     </div>

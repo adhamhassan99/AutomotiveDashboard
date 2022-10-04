@@ -21,7 +21,6 @@ const defaultFields = {
 
 const SignInForm = () => {
   const loggedIn = useSelector((state) => state.user.isLoggedIn);
-  const uid = useSelector((state) => state.user.uid);
 
   const dispatch = useDispatch();
 
@@ -57,7 +56,7 @@ const SignInForm = () => {
   };
 
   if (loggedIn) {
-    return <Navigate replace to="/dashboard" state={[loggedIn, uid]} />;
+    return <Navigate replace to="/home/dashboard" />;
   } else {
     return (
       <div className="sign-in-container">

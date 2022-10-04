@@ -1,4 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
+import NavSearch from "./components/NavSearch/NavSearch.component";
 import DashboardPage from "./Pages/Dashboard/DashboardPage.component";
 import SignInPage from "./Pages/SignInPage/SignInPage.component";
 // import { useSelector } from "react-redux";
@@ -11,12 +12,14 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        {/* {loggedIn ? <Route path="/home" element={}/>} */}
         <Route path="/" element={<Navigate replace to="/auth/signin" />} />
         <Route path="/auth/signin" element={<SignInPage />} />
         <Route exact path="/auth/signup" element={<SignUp />} />
 
-        <Route exact path="/dashboard" element={<DashboardPage />} />
+        <Route path="/home" element={<NavSearch />}>
+          <Route exact path="dashboard" element={<DashboardPage />} />
+          <Route exact path="test" element={<h1>hello</h1>} />
+        </Route>
       </Routes>
     </div>
   );
