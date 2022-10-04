@@ -6,32 +6,32 @@ import CustomLink from "../CustomLink/CustomLink.component";
 const SideBarLinks = () => {
   return (
     <div className="side-bar-links-container">
-      <CustomLink to="/dashboard" icon="dash">
+      <CustomLink to="/home/dashboard" icon="dash">
         Dashboard
       </CustomLink>
-      <CustomLink to="/assets" icon="assets">
+      <CustomLink to="/home/assets" icon="assets">
         Assets
       </CustomLink>
-      <CustomLink to="/booking" icon="book">
+      <CustomLink to="/home/booking" icon="book">
         Booking
       </CustomLink>
-      <CustomLink to="/sellcars" icon="sell">
+      <CustomLink to="/home/sellcars" icon="sell">
         Sell Cars
       </CustomLink>
 
-      <CustomLink to="/buycars" icon="buy">
+      <CustomLink to="/home/buycars" icon="buy">
         Buy Cars
       </CustomLink>
 
-      <CustomLink to="/services" icon="services">
+      <CustomLink to="/home/services" icon="services">
         Services
       </CustomLink>
 
-      <CustomLink to="/calendar" icon="calendar">
+      <CustomLink to="/home/calendar" icon="calendar">
         Calendar
       </CustomLink>
 
-      <CustomLink to="/Messages" icon="msg">
+      <CustomLink to="/home/Messages" icon="msg">
         Messages
       </CustomLink>
     </div>

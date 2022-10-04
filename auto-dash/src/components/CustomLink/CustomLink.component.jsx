@@ -28,10 +28,10 @@ const iconMap = {
   logout: <LogoutLogo />,
 };
 
-const CustomLink = ({ children, to, icon }) => {
+const CustomLink = ({ children, to, icon, onClick }) => {
   return (
     <div className="custom-link-container">
-      <Link className="option" to={`${to}`}>
+      <Link onClick={onClick} className="option" replace to={`${to}`}>
         {iconMap[icon]}
         {children}
       </Link>

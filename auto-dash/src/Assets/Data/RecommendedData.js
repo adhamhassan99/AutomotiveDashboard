@@ -4,21 +4,21 @@ import Car3 from "../Car3.png";
 
 const RecommendedData = [
   {
-    id: 1,
+    id: 3,
     carUrl: Car1,
     carName: "Mini Cooper",
     percentage: "64",
     price: 32,
   },
   {
-    id: 1,
+    id: 4,
     carUrl: Car2,
     carName: "Porsche 911 Carrera",
     percentage: "95",
     price: 75,
   },
   {
-    id: 1,
+    id: 5,
     carUrl: Car3,
     carName: "Mini Cooper",
     percentage: "74",
