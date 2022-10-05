@@ -1,13 +1,12 @@
 .page-container{
     display: flex;
+    height: 100vh;
 
     .main-section{
         display: flex;
         gap: 25px;
         flex-direction: column;
         width: -webkit-fill-available;
-        height: 100%;
-        overflow-y: auto;
 
         
     }

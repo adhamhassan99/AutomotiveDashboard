@@ -1,11 +1,13 @@
 .dashboard-container{
     display: flex;
+    overflow-y: auto;
 
     .main-section{
         display: flex;
         gap: 25px;
         flex-direction: column;
         width: -webkit-fill-available;
+        overflow-y: auto;
         height: 100vh;
         
 

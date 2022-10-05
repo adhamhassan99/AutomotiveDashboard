@@ -31,7 +31,7 @@ const iconMap = {
 const CustomLink = ({ children, to, icon, onClick }) => {
   return (
     <div className="custom-link-container">
-      <Link onClick={onClick} className="option" replace to={`${to}`}>
+      <Link onClick={onClick} className="option" to={`${to}`}>
         {iconMap[icon]}
         {children}
       </Link>

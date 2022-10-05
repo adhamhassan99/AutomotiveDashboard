@@ -1,0 +1,65 @@
+.book-car-card-container{
+    background-color:  white;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    width: 22vw;
+    justify-content: space-between;
+    border-radius: 15px;
+
+    .card-header{
+        display: flex;
+        justify-content: space-between;
+
+        
+        .car-name{
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .fav-status{
+            background-color: transparent;
+            border: none;
+            :hover{
+               fill: black;
+            }
+
+            &.fav-off{
+                :hover{
+                    fill: #F84F56;
+                }
+            }
+            
+        }
+    }
+
+    .subtitle{
+        opacity: 70%;
+        font-size: 1.1rem;
+        justify-self: start;
+        gap: 0;
+    }
+
+    .car-card-img{
+        
+        scale: 85%;
+    }
+
+
+    .card-footer{
+        display: flex;
+        justify-content: space-between;
+
+        .features{
+            display: flex;
+            gap: 20px;
+            font-size:1.1rem ;
+            
+            
+
+            .footer-icon{
+                opacity: 100%;
+            }
+        }
+    }
+}

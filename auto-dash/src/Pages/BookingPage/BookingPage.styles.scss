@@ -1,0 +1,63 @@
+.booking-page-container{
+
+    margin: 0;
+    margin-left: 3%;
+    margin-right: 3%;
+    overflow-y: scroll;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .filters-container{
+        display: flex;
+        justify-content: space-between;
+
+        select{
+            appearance: none;
+            border: none;
+            padding: 10px 50px 10px 10px;
+            border-radius: 15px;
+            margin-right: 20px;
+            background-image: url('../../Assets/ArrowImg.png');
+            background-repeat: no-repeat;
+            background-position: calc(100% - 3px)center;
+            background-size: 25px;
+            &:focus{
+                border: none;
+                outline: none;
+            }
+        }
+
+        .filter-toggles{
+            display: flex;
+            gap: 25px;
+            button{
+                border: none;
+                padding: 10px;
+                border-radius: 50%;
+                align-content: center;
+                background-color: white;
+
+                &.purp{
+                    background-color: #A162F7;
+
+                    :hover{
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+    }
+    
+    
+    .car-cards-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3vw;
+        
+        
+        
+    }
+}
