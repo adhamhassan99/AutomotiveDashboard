@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../NavBar/NavBar.component";
 import SideBar from "../SideBar/SideBar.component";
 import "./NavSearch.styles.scss";
+import ProfilePic from "../../Assets/ProfilePic.png";
 import { useSelector } from "react-redux";
 import { getUserStatus } from "../../features/user/userSlice";
 
@@ -15,7 +16,7 @@ const NavSearch = () => {
       <div className="page-container">
         <SideBar />
         <div className="main-section">
-          <NavBar notf={true} />
+          <NavBar imageUrl={ProfilePic} />
           <Outlet />
         </div>
       </div>

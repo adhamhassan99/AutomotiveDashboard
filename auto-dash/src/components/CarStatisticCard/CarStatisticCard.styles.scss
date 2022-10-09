@@ -1,6 +1,6 @@
-$prim-blue:#438FFE;
+$prim-blue: #438ffe;
 
-.car-statistic-card-container{
+.car-statistic-card-container {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -8,40 +8,34 @@ $prim-blue:#438FFE;
     background-color: $prim-blue;
     border-radius: 15px;
     width: 28%;
+    min-width: 400px;
     height: 80vh;
     gap: 20px;
     color: white;
     font-weight: 500;
     padding-top: 30px;
 
-
-    .entry-title{
-
+    .entry-title {
         opacity: 70%;
     }
 
-    .statistic-row{
+    .statistic-row {
         display: flex;
         justify-content: space-between;
         width: 85%;
 
-        .row-entry{
+        .row-entry {
             display: flex;
             flex-direction: column;
             gap: 5px;
         }
     }
 
-    
-        
-
-        .img-element{
-            position: absolute;
-            left: 6.37%;
-            right: 6.09%;
-            top: 30%;
-            bottom: -74.91%;
-            
-        
+    .img-element {
+        position: absolute;
+        left: 6.37%;
+        right: 6.09%;
+        top: 30%;
+        bottom: -74.91%;
     }
 }

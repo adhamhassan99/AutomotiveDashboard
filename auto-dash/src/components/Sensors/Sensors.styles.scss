@@ -1,0 +1,59 @@
+.sensors-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px 25px;
+
+    .sensors-header {
+        display: flex;
+        gap: 70px;
+        align-items: center;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    .sensor-list-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .list-entry {
+            display: flex;
+            gap: 10px;
+            font-size: 1.1rem;
+
+            .sensor-label {
+                flex: 1;
+            }
+
+            &.checked {
+                color: #d43b3b;
+
+                input {
+                    accent-color: #d43b3b;
+                }
+            }
+
+            .graph-icon {
+                justify-self: flex-end;
+            }
+        }
+    }
+    .sensor-btn {
+        width: max-content;
+        justify-self: flex-end;
+        justify-content: last baseline;
+        padding: 10px 20px;
+        margin-top: 15px;
+        color: white;
+        font-size: 1.1rem;
+        background-color: #d43b3b;
+        border-color: #d43b3b;
+        border-style: none;
+        border-radius: 10px;
+    }
+}

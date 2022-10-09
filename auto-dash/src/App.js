@@ -24,6 +24,11 @@ function App() {
           <Route exact path="dashboard" element={<DashboardPage />} />
           <Route exact path="assets" element={<AssetsPage />} />
           <Route exact path="booking" element={<BookingPage />} />
+          <Route exact path="sellcars" element={<BookingPage />} />
+          <Route exact path="buycars" element={<BookingPage />} />
+          <Route exact path="services" element={<BookingPage />} />
+          <Route exact path="calendar" element={<BookingPage />} />
+          <Route exact path="Messages" element={<BookingPage />} />
         </Route>
       </Routes>
     </div>

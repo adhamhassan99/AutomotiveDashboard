@@ -1,15 +1,24 @@
-.assets-page-container{
-
+.assets-page-container {
     display: flex;
     flex-direction: column;
-    padding: 0 30px ;
+    padding: 0 30px;
     overflow-y: auto;
 
-    .statistics-section-container{
+    .statistics-section-container {
         display: flex;
-    }
+        justify-content: space-between;
 
+        .assets-side-statistics {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            .mid-section {
+                display: flex;
+                gap: 30px;
+            }
+        }
+    }
 }
-.main-section{
-    gap:0;
+.main-section {
+    gap: 0;
 }
