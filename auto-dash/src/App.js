@@ -17,6 +17,7 @@ function App() {
         {/* <Route exact path="/test" element={<h1>hello</h1>} /> */}
 
         <Route path="/" element={<Navigate replace to="/auth/signin" />} />
+
         <Route path="/auth/signin" element={<SignInPage />} />
         <Route exact path="/auth/signup" element={<SignUp />} />
 
