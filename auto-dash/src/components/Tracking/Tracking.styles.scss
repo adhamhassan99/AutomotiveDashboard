@@ -1,0 +1,11 @@
+.tracking-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    .title {
+        font-size: 1.5rem;
+    }
+}

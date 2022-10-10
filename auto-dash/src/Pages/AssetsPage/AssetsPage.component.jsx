@@ -3,6 +3,7 @@ import ActivityCard from "../../components/ActivityCard/ActivityCard.component";
 import CarStatisticCard from "../../components/CarStatisticCard/CarStatisticCard.component";
 
 import Notes from "../../components/Notes/Notes.component";
+import Reminder from "../../components/Reminder/Reminder.component";
 import Sensors from "../../components/Sensors/Sensors.component";
 
 import "./AssetsPage.styles.scss";
@@ -23,6 +24,7 @@ const AssetsPage = () => {
             <Notes />
             <Sensors />
           </div>
+          <Reminder />
         </div>
       </div>
     </div>

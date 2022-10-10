@@ -1,0 +1,12 @@
+.car-display-container {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        font-weight: 700;
+        font-size: 2rem;
+    }
+}

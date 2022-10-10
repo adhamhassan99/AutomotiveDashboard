@@ -1,0 +1,59 @@
+.offers-card-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .name {
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        .price {
+            color: #ff6370;
+            font-size: 1.1rem;
+            font-weight: 600;
+
+            .sub {
+                color: #a4a5a6;
+                font-weight: normal;
+                font-size: 0.9rem;
+            }
+        }
+        .sub {
+            color: #a4a5a6;
+            font-weight: normal;
+            font-size: 0.97rem;
+
+            .bold {
+                font-weight: 600;
+            }
+        }
+
+        .arrowbtn {
+            width: max-content;
+            color: white;
+            background-color: #ff6370;
+            border: none;
+            padding: 3px 20px;
+            border-radius: 11px;
+            &:hover {
+                color: #ff6370;
+                background-color: white;
+                border: 1px solid #ff6370;
+            }
+        }
+    }
+
+    .rate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #72767c;
+    }
+}

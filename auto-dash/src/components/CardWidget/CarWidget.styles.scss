@@ -1,0 +1,26 @@
+.car-widget-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .subtitle {
+        color: #808191;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+
+    .widget-price {
+        font-weight: 600;
+        font-size: 1.2rem;
+
+        &.blue {
+            color: #407ef9;
+        }
+        &.hotred {
+            color: #ff6370;
+        }
+        &.purple {
+            color: #a162f7;
+        }
+    }
+}

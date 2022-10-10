@@ -3,7 +3,13 @@
     flex-direction: column;
     padding: 0 30px;
     overflow-y: auto;
+    padding-bottom: 30px;
 
+    .assets-title {
+        h1 {
+            margin-top: 0;
+        }
+    }
     .statistics-section-container {
         display: flex;
         justify-content: space-between;

@@ -9,7 +9,7 @@ const ActivityCard = () => {
     <div className="activity-card-container">
       <div className="card-header">
         <strong>Activity</strong>
-        <span>View All</span>
+        <span className="greyed">View All</span>
       </div>
       <div className="card-data">
         <img src={GraphPng} alt="" />

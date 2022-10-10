@@ -1,0 +1,41 @@
+.reminder-container {
+    padding: 20px 25px;
+    display: flex;
+    gap: 20px;
+    border-radius: 15px;
+    flex-direction: column;
+    background-color: white;
+
+    .container-header {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+        font-size: 1.3rem;
+
+        .add-btn {
+            padding: 10px 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #a162f7;
+            color: white;
+            font-size: 1rem;
+
+            &:hover {
+                color: #a162f7;
+                background-color: white;
+                border: 1px solid #a162f7;
+            }
+        }
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 500;
+
+        &.index {
+            color: #72767c;
+        }
+    }
+}

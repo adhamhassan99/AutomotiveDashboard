@@ -1,5 +1,4 @@
-.booking-page-container{
-
+.booking-page-container {
     margin: 0;
     margin-left: 3%;
     margin-right: 3%;
@@ -9,55 +8,50 @@
     flex-direction: column;
     gap: 20px;
 
-    .filters-container{
+    .filters-container {
         display: flex;
         justify-content: space-between;
 
-        select{
+        select {
             appearance: none;
             border: none;
             padding: 10px 50px 10px 10px;
             border-radius: 15px;
             margin-right: 20px;
-            background-image: url('../../Assets/ArrowImg.png');
+            background-image: url("../../Assets/ArrowImg.png");
             background-repeat: no-repeat;
-            background-position: calc(100% - 3px)center;
+            background-position: calc(100% - 3px) center;
             background-size: 25px;
-            &:focus{
+            &:focus {
                 border: none;
                 outline: none;
             }
         }
 
-        .filter-toggles{
+        .filter-toggles {
             display: flex;
             gap: 25px;
-            button{
+            button {
                 border: none;
                 padding: 10px;
                 border-radius: 50%;
                 align-content: center;
                 background-color: white;
 
-                &.purp{
-                    background-color: #A162F7;
+                &.purp {
+                    background-color: #a162f7;
 
-                    :hover{
+                    :hover {
                         cursor: pointer;
                     }
                 }
-
             }
         }
     }
-    
-    
-    .car-cards-container{
+
+    .car-cards-container {
         display: flex;
         flex-wrap: wrap;
-        gap: 3vw;
-        
-        
-        
+        gap: 1.5vw;
     }
 }
