@@ -14,7 +14,7 @@ const NavBar = ({ notf, imageUrl }) => {
       </div>
       <div className="prof-notif-container">
         {notf ? <NotificationOn /> : <NotificationOff />}
-        <img src={`${imageUrl}`} alt="" />
+        <img className="profile-pic" src={`${imageUrl}`} alt="" />
       </div>
     </div>
   );

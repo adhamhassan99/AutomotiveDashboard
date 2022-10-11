@@ -8,10 +8,16 @@ import { ReactComponent as FilterIcon } from "../../Assets/FilterIcon.svg";
 
 import { carBrands, CarData } from "./CarsData";
 import BookCarCard from "../../components/BookCarCard/BookCarCard.component";
+import { render } from "react-dom";
 
 const BookingPage = () => {
   const [usage, setUsage] = useState("Any");
   const [brand, setbrand] = useState("Any");
+
+  const handlechange = (index) => {
+    CarData[index - 1].fav = !CarData[index - 1].fav;
+    console.log(CarData[index - 1].fav);
+  };
 
   var carData = CarData.filter((car) => {
     if (brand === "Any" && usage === "Any") return car;
@@ -63,7 +69,15 @@ const BookingPage = () => {
       </div>
       <div className="car-cards-container">
         {carData.map((car) => {
-          return <BookCarCard key={car.id} {...car} />;
+          return (
+            <BookCarCard
+              key={car.id}
+              onClick={() => {
+                handlechange(car.id);
+              }}
+              {...car}
+            />
+          );
         })}
       </div>
     </div>

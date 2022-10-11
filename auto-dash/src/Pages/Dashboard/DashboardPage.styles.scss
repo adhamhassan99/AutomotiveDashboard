@@ -1,27 +1,23 @@
-.dashboard-container{
+.dashboard-container {
     display: flex;
-    overflow-y: auto;
 
-    .main-section{
+    .dash-main-section {
         display: flex;
         gap: 25px;
         flex-direction: column;
         width: -webkit-fill-available;
         overflow-y: auto;
         height: 100vh;
-        
 
-        .statistics-section{
+        .statistics-section {
             display: flex;
             justify-content: center;
             gap: 8%;
         }
     }
-    
 
-    .rcmnd-cars{
+    .rcmnd-cars {
         display: flex;
         justify-content: space-evenly;
-          
     }
 }

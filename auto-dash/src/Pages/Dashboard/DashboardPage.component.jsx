@@ -16,7 +16,7 @@ import Statistics from "../../components/Statistics/Statistics.component";
 const DashboardPage = () => {
   return (
     <div className="dashboard-container">
-      <div className="main-section">
+      <div className="dash-main-section">
         <MainContent />
         <div className="statistics-section">
           <Statistics description="256 Miles" title="Miles" />

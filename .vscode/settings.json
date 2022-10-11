@@ -1,0 +1,5 @@
+{
+    "reactComponentGenerator.language": "js",
+    "reactComponentGenerator.useIndexFile": false,
+    "reactComponentGenerator.verboseStoriesComments": false
+}

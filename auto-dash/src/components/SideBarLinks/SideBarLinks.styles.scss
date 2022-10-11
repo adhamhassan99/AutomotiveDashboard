@@ -1,7 +1,15 @@
-.side-bar-links-container{
+.side-bar-links-container {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
     flex: 1;
+
+    .option {
+        padding: 10px;
+        border-radius: 6px;
+        &.active {
+            background-color: #f3f5f8;
+        }
+    }
 }

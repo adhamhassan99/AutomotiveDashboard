@@ -16,7 +16,7 @@ const SideBarFooter = () => {
 
   return (
     <div className="side-bar-footer-container">
-      <CustomLink to="/settings" icon="set">
+      <CustomLink to="/home/settings/profile" icon="set">
         Settings
       </CustomLink>
       <CustomLink to="/auth/signin" onClick={handleLogOut} icon="logout">

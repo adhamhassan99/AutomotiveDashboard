@@ -2,7 +2,7 @@ import React from "react";
 
 import "./CustomLink.styles.scss";
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import { ReactComponent as DashboardLogo } from "../../Assets/DashboardIcon.svg";
 import { ReactComponent as AssestsLogo } from "../../Assets/AssetsIcon.svg";
@@ -31,10 +31,10 @@ const iconMap = {
 const CustomLink = ({ children, to, icon, onClick }) => {
   return (
     <div className="custom-link-container">
-      <Link onClick={onClick} className="option" to={`${to}`}>
+      <NavLink onClick={onClick} className="option" to={`${to}`}>
         {iconMap[icon]}
         {children}
-      </Link>
+      </NavLink>
     </div>
   );
 };

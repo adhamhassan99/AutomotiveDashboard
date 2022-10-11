@@ -1,0 +1,21 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+
+    .horz-line {
+        width: 100%;
+        border: 1px solid rgba(233, 234, 236, 1);
+        background-color: rgba(233, 234, 236, 1);
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+
+        .title {
+            margin: 0;
+        }
+    }
+}

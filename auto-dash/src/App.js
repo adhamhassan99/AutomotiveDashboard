@@ -1,9 +1,11 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import NavSearch from "./components/NavSearch/NavSearch.component";
+import Profile from "./components/Profile/Profile.component";
 import AssetsPage from "./Pages/AssetsPage/AssetsPage.component";
 import BookingPage from "./Pages/BookingPage/BookingPage.component";
 import DashboardPage from "./Pages/Dashboard/DashboardPage.component";
 import SellPage from "./Pages/SellPage/SellPage.component";
+import SettingsPage from "./Pages/SettingsPage/SettingsPage.component";
 import SignInPage from "./Pages/SignInPage/SignInPage.component";
 // import { useSelector } from "react-redux";
 
@@ -31,6 +33,14 @@ function App() {
           <Route exact path="services" element={<BookingPage />} />
           <Route exact path="calendar" element={<BookingPage />} />
           <Route exact path="Messages" element={<BookingPage />} />
+
+          <Route exact path="settings" element={<SettingsPage />}>
+            <Route exact path="details" element={<Profile />} />
+            <Route exact path="profile" element={<Profile />} />
+            <Route exact path="password" element={<Profile />} />
+            <Route exact path="email" element={<Profile />} />
+            <Route exact path="notification" element={<Profile />} />
+          </Route>
         </Route>
       </Routes>
     </div>

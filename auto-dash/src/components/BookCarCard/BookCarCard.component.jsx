@@ -6,12 +6,15 @@ import { ReactComponent as FavIcon } from "../../Assets/FavIcon.svg";
 import { ReactComponent as FavIconOn } from "../../Assets/FavIconOn.svg";
 import "./BookCarCard.styles.scss";
 
-const BookCarCard = ({ name, fav, type, carImg, price }) => {
+const BookCarCard = ({ name, fav, type, carImg, price, onClick }) => {
   return (
     <div className="book-car-card-container">
       <div className="card-header">
         <h1 className="car-name">{name}</h1>
-        <button className={`fav-status ${fav ? "fav-on" : "fav-off"}`}>
+        <button
+          onClick={onClick}
+          className={`fav-status ${fav ? "fav-on" : "fav-off"}`}
+        >
           {fav ? <FavIconOn className="fav-icon" /> : <FavIcon />}
         </button>
       </div>
