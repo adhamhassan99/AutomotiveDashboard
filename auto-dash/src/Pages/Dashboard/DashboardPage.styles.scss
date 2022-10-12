@@ -1,12 +1,13 @@
 .dashboard-container {
     display: flex;
+    padding: 50px;
 
     .dash-main-section {
         display: flex;
         gap: 25px;
+        overflow-y: auto;
         flex-direction: column;
         width: -webkit-fill-available;
-        overflow-y: auto;
         height: 100vh;
 
         .statistics-section {
@@ -19,5 +20,6 @@
     .rcmnd-cars {
         display: flex;
         justify-content: space-evenly;
+        gap: 40px;
     }
 }

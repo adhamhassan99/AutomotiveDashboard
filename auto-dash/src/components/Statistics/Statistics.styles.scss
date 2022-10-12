@@ -1,51 +1,43 @@
-$secondary-blue: #2884FF;
+$secondary-blue: #2884ff;
 $prim-grey: #acb9c4;
 
-
-
-.statistics-container{
+.statistics-container {
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 33vw;
+    flex: 1;
     height: 32vh;
+    margin: 20px;
     border-radius: 15px;
     padding: 15px 30px;
     box-sizing: border-box;
 
-    .statistic-selector{
+    .statistic-selector {
         display: flex;
-        justify-content:space-between;
+        justify-content: space-between;
         margin: 4% 0;
         font-size: 0.8rem;
         font-weight: 500;
-        
 
-
-        .btn-container{
-            .selected{
-                background-color:$secondary-blue ;
+        .btn-container {
+            .selected {
+                background-color: $secondary-blue;
                 padding: 3px 10px;
                 border-radius: 15px;
                 color: white;
-                
             }
-            button{
+            button {
                 border: none;
                 background-color: transparent;
                 font-size: 0.75rem;
-                
-                
-                &:hover{
-                background-color:$prim-grey ;
-                padding: 3px 10px;
-                border-radius: 15px;
-                color: white;
-                }
 
-                
+                &:hover {
+                    background-color: $prim-grey;
+                    padding: 3px 10px;
+                    border-radius: 15px;
+                    color: white;
+                }
             }
         }
-
     }
 }

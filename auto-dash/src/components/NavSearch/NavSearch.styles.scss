@@ -1,13 +1,11 @@
-.page-container{
+.page-container {
     display: flex;
     height: 100vh;
 
-    .main-section{
+    .main-section {
         display: flex;
         gap: 25px;
         flex-direction: column;
-        width: -webkit-fill-available;
-
-        
+        width: 100%;
     }
 }

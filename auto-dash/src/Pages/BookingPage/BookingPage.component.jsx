@@ -8,7 +8,6 @@ import { ReactComponent as FilterIcon } from "../../Assets/FilterIcon.svg";
 
 import { carBrands, CarData } from "./CarsData";
 import BookCarCard from "../../components/BookCarCard/BookCarCard.component";
-import { render } from "react-dom";
 
 const BookingPage = () => {
   const [usage, setUsage] = useState("Any");

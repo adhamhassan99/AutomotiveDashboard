@@ -16,16 +16,16 @@ export const userSlice = createSlice({
     setUID: (state, action) => {
       state.uid = action.payload;
     },
-    googleLoggedIn: (state, action) => {
-      state.isLoggedIn = true;
-      state.uid = action.payload;
+    setUserImg: (state, action) => {
       state.userImg = action.payload;
     },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { setUID, setisLoggedIn, googleLoggedIn } = userSlice.actions;
+export const { setUID, setisLoggedIn, setUserImg } = userSlice.actions;
 export const getUserStatus = (state) => state.user.isLoggedIn;
 export const getUID = (state) => state.user.uid;
+export const getUserImg = (state) => state.user.userImg;
+
 export default userSlice.reducer;

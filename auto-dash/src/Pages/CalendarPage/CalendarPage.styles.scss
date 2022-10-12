@@ -1,0 +1,29 @@
+.calender-page-container {
+    display: flex;
+    padding: 30px;
+    gap: 40px;
+    flex-wrap: wrap;
+    overflow-y: auto;
+
+    .calender-events-container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 40px;
+        .title {
+            font-weight: 600;
+            font-size: 2.2rem;
+        }
+    }
+
+    .expanded-calender-container {
+        flex: 2;
+        .fc {
+            height: 100%;
+            tbody {
+                width: 100%;
+                background-color: white;
+            }
+        }
+    }
+}

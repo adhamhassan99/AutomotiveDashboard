@@ -3,6 +3,7 @@ import NavSearch from "./components/NavSearch/NavSearch.component";
 import Profile from "./components/Profile/Profile.component";
 import AssetsPage from "./Pages/AssetsPage/AssetsPage.component";
 import BookingPage from "./Pages/BookingPage/BookingPage.component";
+import CalenderPage from "./Pages/CalendarPage/CalendarPage.component";
 import DashboardPage from "./Pages/Dashboard/DashboardPage.component";
 import SellPage from "./Pages/SellPage/SellPage.component";
 import SettingsPage from "./Pages/SettingsPage/SettingsPage.component";
@@ -29,10 +30,10 @@ function App() {
           <Route exact path="assets" element={<AssetsPage />} />
           <Route exact path="booking" element={<BookingPage />} />
           <Route exact path="sellcars" element={<SellPage />} />
-          <Route exact path="buycars" element={<BookingPage />} />
-          <Route exact path="services" element={<BookingPage />} />
-          <Route exact path="calendar" element={<BookingPage />} />
-          <Route exact path="Messages" element={<BookingPage />} />
+          <Route exact path="buycars" element={<CalenderPage />} />
+          <Route exact path="services" element={<CalenderPage />} />
+          <Route exact path="calendar" element={<CalenderPage />} />
+          <Route exact path="Messages" element={<CalenderPage />} />
 
           <Route exact path="settings" element={<SettingsPage />}>
             <Route exact path="details" element={<Profile />} />

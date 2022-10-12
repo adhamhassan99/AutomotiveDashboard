@@ -2,13 +2,13 @@ import React from "react";
 import NavBar from "../NavBar/NavBar.component";
 import SideBar from "../SideBar/SideBar.component";
 import "./NavSearch.styles.scss";
-import ProfilePic from "../../Assets/ProfilePic.png";
 import { useSelector } from "react-redux";
 import { getUserStatus } from "../../features/user/userSlice";
 
 import { Outlet, Navigate } from "react-router-dom";
 
 const NavSearch = () => {
+  const userImg = useSelector((state) => state.user.userImg);
   const userLoggedIn = useSelector(getUserStatus);
 
   if (userLoggedIn) {
@@ -16,7 +16,7 @@ const NavSearch = () => {
       <div className="page-container">
         <SideBar />
         <div className="main-section">
-          <NavBar imageUrl={ProfilePic} />
+          <NavBar imageUrl={userImg} />
           <Outlet />
         </div>
       </div>

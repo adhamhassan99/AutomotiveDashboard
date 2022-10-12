@@ -1,0 +1,54 @@
+.settings-photo-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex: 1;
+        .bold {
+            font-weight: 600;
+            font-size: 1.3rem;
+        }
+        .subtitle {
+            color: #7c7c8d;
+        }
+    }
+    .profile-pic {
+        border-radius: 50%;
+        scale: 80%;
+    }
+
+    .img-controls {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        flex: 1;
+        justify-content: center;
+
+        .delete-img {
+            background-color: transparent;
+            border: none;
+            color: rgba(124, 124, 141, 1);
+            font-weight: 500;
+            font-size: 1rem;
+            &:hover {
+                color: black;
+            }
+        }
+
+        .control {
+            input {
+                display: none;
+            }
+            label {
+                color: rgba(161, 98, 247, 1);
+                font-weight: 500;
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+}

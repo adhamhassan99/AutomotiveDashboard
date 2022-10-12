@@ -2,7 +2,11 @@ import React from "react";
 import "./GetStarted.styles.scss";
 
 import { batch, useDispatch } from "react-redux";
-import { setUID, setisLoggedIn } from "../../features/user/userSlice";
+import {
+  setUID,
+  setisLoggedIn,
+  setUserImg,
+} from "../../features/user/userSlice";
 
 import { ReactComponent as GoogleLogo } from "../../Assets/LogoGoogle.svg";
 import { ReactComponent as FacebookLogo } from "../../Assets/Facebook.svg";
@@ -19,10 +23,10 @@ const GetStarted = ({ linkUrl, linkText }) => {
   const signInWithGoogle = async () => {
     const { user } = await signInWithGooglePopup();
     await createUserDocumentFromAuth(user);
-    console.log(user);
     batch(() => {
       dispatch(setUID(user.uid));
       dispatch(setisLoggedIn(true));
+      dispatch(setUserImg(user.photoURL));
     });
   };
 

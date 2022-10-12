@@ -4,11 +4,11 @@ import RecommendedData from "../../Assets/Data/RecommendedData";
 import RecommendedCarCard from "../../components/RecommendedCarCard/RecommendedCarCard.component";
 import MainContent from "../../components/MainContent/MainContent.component";
 
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 // eslint-disable-next-line
 import { getUID, getUserStatus } from "../../features/user/userSlice";
 
-import { Navigate } from "react-router-dom";
+// import { Navigate } from "react-router-dom";
 
 import "./DashboardPage.styles.scss";
 import Statistics from "../../components/Statistics/Statistics.component";
