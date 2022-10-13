@@ -1,0 +1,11 @@
+.orders-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+    .bill-items-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

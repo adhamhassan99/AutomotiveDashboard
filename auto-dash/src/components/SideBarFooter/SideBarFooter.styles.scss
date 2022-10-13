@@ -1,7 +1,14 @@
-.side-bar-footer-container{
+.side-bar-footer-container {
     display: flex;
     flex-direction: column;
     gap: 30px;
     margin-bottom: 10%;
-   
+
+    .option {
+        padding: 10px;
+        border-radius: 6px;
+        &.active {
+            background-color: #f3f5f8;
+        }
+    }
 }

@@ -1,0 +1,55 @@
+.bill-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 5px 15px;
+    gap: 25px;
+    background-color: white;
+    &.add {
+        justify-content: center;
+        color: rgba(95, 97, 101, 1);
+        font-weight: 700;
+
+        font-size: 1.1em;
+        background-color: rgba(239, 235, 241, 1);
+        border: 1px dashed rgba(216, 210, 231, 1);
+
+        &:hover {
+            cursor: pointer;
+        }
+        .price {
+            visibility: hidden;
+        }
+    }
+
+    .ind-name-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .circle-ind {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+
+        &.green {
+            background-color: rgba(112, 207, 151, 1);
+        }
+        &.red {
+            background-color: rgba(255, 99, 112, 1);
+        }
+        &.purple {
+            background-color: rgba(161, 98, 247, 1);
+        }
+    }
+
+    .price {
+        color: rgba(161, 98, 247, 1);
+        font-weight: 700;
+        background-color: rgba(161, 98, 247, 0.1);
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+}

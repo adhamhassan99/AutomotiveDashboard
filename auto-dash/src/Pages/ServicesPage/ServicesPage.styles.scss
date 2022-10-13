@@ -1,0 +1,10 @@
+.services-page-container {
+    display: flex;
+    padding: 40px;
+
+    .left-col-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}

@@ -1,0 +1,41 @@
+.order-chart-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    gap: 50px;
+    flex-grow: 1;
+    position: relative;
+    border-radius: 10px;
+
+    .title {
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+
+    .order-metric {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        .metric-name {
+            font-weight: 700;
+            color: rgba(95, 97, 101, 1);
+        }
+        .metric-value {
+            color: rgba(161, 98, 247, 1);
+            font-weight: 700;
+            font-size: 1.2em;
+        }
+
+        .img-container {
+            position: relative;
+
+            img {
+                position: absolute;
+                top: -39px;
+                left: -51px;
+            }
+        }
+    }
+}

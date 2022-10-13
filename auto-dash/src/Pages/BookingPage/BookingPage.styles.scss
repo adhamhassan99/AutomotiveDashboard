@@ -1,12 +1,11 @@
 .booking-page-container {
     margin: 0;
-    margin-left: 3%;
-    margin-right: 3%;
     overflow-y: scroll;
     height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 50px;
 
     .filters-container {
         display: flex;
@@ -30,6 +29,7 @@
 
         .filter-toggles {
             display: flex;
+            flex-wrap: wrap;
             gap: 25px;
             button {
                 border: none;
@@ -52,6 +52,6 @@
     .car-cards-container {
         display: flex;
         flex-wrap: wrap;
-        gap: 1.5vw;
+        justify-content: space-between;
     }
 }

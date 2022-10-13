@@ -6,6 +6,7 @@ import BookingPage from "./Pages/BookingPage/BookingPage.component";
 import CalenderPage from "./Pages/CalendarPage/CalendarPage.component";
 import DashboardPage from "./Pages/Dashboard/DashboardPage.component";
 import SellPage from "./Pages/SellPage/SellPage.component";
+import ServicesPage from "./Pages/ServicesPage/ServicesPage.component";
 import SettingsPage from "./Pages/SettingsPage/SettingsPage.component";
 import SignInPage from "./Pages/SignInPage/SignInPage.component";
 // import { useSelector } from "react-redux";
@@ -30,8 +31,8 @@ function App() {
           <Route exact path="assets" element={<AssetsPage />} />
           <Route exact path="booking" element={<BookingPage />} />
           <Route exact path="sellcars" element={<SellPage />} />
-          <Route exact path="buycars" element={<CalenderPage />} />
-          <Route exact path="services" element={<CalenderPage />} />
+          <Route exact path="buycars" element={<BookingPage />} />
+          <Route exact path="services" element={<ServicesPage />} />
           <Route exact path="calendar" element={<CalenderPage />} />
           <Route exact path="Messages" element={<CalenderPage />} />
 

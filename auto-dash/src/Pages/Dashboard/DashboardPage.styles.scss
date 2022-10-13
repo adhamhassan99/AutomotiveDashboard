@@ -1,19 +1,19 @@
 .dashboard-container {
     display: flex;
     padding: 50px;
+    overflow-y: auto;
 
     .dash-main-section {
         display: flex;
         gap: 25px;
-        overflow-y: auto;
+
         flex-direction: column;
         width: -webkit-fill-available;
         height: 100vh;
 
         .statistics-section {
             display: flex;
-            justify-content: center;
-            gap: 8%;
+            justify-content: space-between;
         }
     }
 

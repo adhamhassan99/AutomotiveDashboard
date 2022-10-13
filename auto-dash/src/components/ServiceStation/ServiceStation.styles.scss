@@ -1,0 +1,52 @@
+.service-station-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .title {
+        font-weight: 700;
+        font-size: 1.5em;
+    }
+    .station-data {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .station-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+    }
+    .legend-container {
+        align-self: center;
+        display: flex;
+        gap: 25px;
+        .legend-item {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+
+            .ind-name {
+                color: rgba(114, 118, 124, 1);
+                font-weight: 500;
+                font-size: 1em;
+            }
+            .circle-ind {
+                height: 12px;
+                width: 12px;
+                border-radius: 50%;
+
+                &.clear {
+                    background-color: white;
+                    border: 0.5px solid rgba(114, 118, 124, 1);
+                }
+                &.red {
+                    background-color: rgba(255, 99, 112, 1);
+                }
+                &.purple {
+                    background-color: rgba(161, 98, 247, 1);
+                }
+            }
+        }
+    }
+}
