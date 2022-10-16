@@ -4,6 +4,7 @@ import { ReactComponent as MaintIcon } from "../../Assets/MaintIcon.svg";
 
 export const notesData = [
   {
+    id: 1,
     icon: <ChatIcon />,
     title: "Monday, 6th April 2020",
     subtitle: "Book for General Service",
@@ -11,6 +12,7 @@ export const notesData = [
     date: "14:07 - 21/11/2022",
   },
   {
+    id: 2,
     icon: <WarningIcon />,
     title: "Thursday, 24th October 2021",
     subtitle: "Vehicle LV 001 has been marked for recall.",
@@ -18,6 +20,7 @@ export const notesData = [
     date: "14:07 - 21/11/2022",
   },
   {
+    id: 3,
     icon: <MaintIcon />,
     title: "Monday, 13th August 2018",
     subtitle: "Maintenance Completed, Collect",

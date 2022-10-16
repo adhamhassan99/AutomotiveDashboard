@@ -1,0 +1,15 @@
+.services-detail-container {
+    background-color: white;
+    display: flex;
+
+    gap: 3px;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 14px;
+
+    .divider {
+        width: 3px;
+        height: 40px;
+        padding-left: 22px;
+    }
+}

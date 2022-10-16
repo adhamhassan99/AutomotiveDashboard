@@ -1,10 +1,47 @@
 .services-page-container {
     display: flex;
+    overflow-y: auto;
+    flex-direction: column;
+    gap: 40px;
     padding: 40px;
-
-    .left-col-container {
+    .row {
         display: flex;
-        flex-direction: column;
-        gap: 30px;
+        flex-wrap: wrap;
+        gap: 3%;
+        .left-col-container {
+            display: flex;
+            flex: 2;
+            flex-direction: column;
+            gap: 30px;
+
+            .services-pay-btn {
+                background-color: #a162f7;
+                border-color: transparent;
+                padding: 14px 0;
+                border-radius: 10px;
+                font-weight: 700;
+                color: rgba(255, 255, 255, 1);
+                font-size: 1.2em;
+            }
+        }
+
+        .right-col-container {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            gap: 20px;
+
+            .title {
+                font-weight: 700;
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    .metrics-container {
+        display: flex;
+        gap: 7%;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 }

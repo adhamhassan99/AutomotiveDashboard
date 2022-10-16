@@ -9,7 +9,7 @@ const Notes = () => {
       <strong>Noties</strong>
       <div className="notes">
         {notesData.map((note) => (
-          <div className="note">
+          <div key={note.id} className="note">
             <div className="note-icon">{note.icon}</div>
             <div className="note-info">
               <strong>{note.title}</strong>

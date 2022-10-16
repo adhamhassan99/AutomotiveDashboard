@@ -13,14 +13,16 @@
     .statistics-section-container {
         display: flex;
         justify-content: space-between;
+        gap: 50px;
 
         .assets-side-statistics {
             display: flex;
             flex-direction: column;
             gap: 25px;
+            flex: 1;
             .mid-section {
                 display: flex;
-                gap: 30px;
+                gap: 50px;
             }
         }
     }

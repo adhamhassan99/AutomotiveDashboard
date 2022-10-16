@@ -1,0 +1,39 @@
+.schedule-entry-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .circle {
+        width: 14px;
+        height: 14px;
+        border: 2px solid rgba(225, 225, 225, 1);
+        border-spacing: 10%;
+
+        border-radius: 50%;
+
+        &.selected {
+            background-color: #a162f7;
+        }
+    }
+
+    .entry-data {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .entry-title {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .details {
+            display: flex;
+            gap: 40px;
+            font-weight: 500;
+            color: rgba(114, 118, 124, 1);
+            .vr {
+                border-right: 1px solid rgba(236, 236, 236, 1);
+                height: 15px;
+            }
+        }
+    }
+}

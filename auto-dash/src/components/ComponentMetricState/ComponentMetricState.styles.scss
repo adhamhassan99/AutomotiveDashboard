@@ -1,0 +1,21 @@
+.comp-metric-state-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 15px;
+    .metric-name {
+        font-weight: 700;
+        font-size: 1.1em;
+    }
+
+    .comp-state {
+        color: rgba(128, 129, 145, 1);
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+
+        .vr {
+            border-right: 1px solid #ececec;
+        }
+    }
+}

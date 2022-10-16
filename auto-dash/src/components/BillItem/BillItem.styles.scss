@@ -26,7 +26,12 @@
     .ind-name-container {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 15px;
+        .name {
+            color: rgba(95, 97, 101, 1);
+            font-weight: 700;
+            font-size: 1.1em;
+        }
     }
 
     .circle-ind {

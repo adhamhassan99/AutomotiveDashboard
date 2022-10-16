@@ -68,15 +68,7 @@ const BookingPage = () => {
       </div>
       <div className="car-cards-container">
         {carData.map((car) => {
-          return (
-            <BookCarCard
-              key={car.id}
-              onClick={() => {
-                handlechange(car.id);
-              }}
-              {...car}
-            />
-          );
+          return <BookCarCard key={car.id} {...car} />;
         })}
       </div>
     </div>

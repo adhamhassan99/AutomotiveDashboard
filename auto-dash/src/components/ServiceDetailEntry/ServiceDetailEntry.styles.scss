@@ -1,0 +1,38 @@
+.service-detail-entry {
+    display: flex;
+    gap: 5%;
+
+    img {
+        object-fit: contain;
+    }
+    .detail-values {
+        display: flex;
+        flex: 1;
+        gap: 8px;
+        flex-direction: column;
+        .title {
+            color: rgba(95, 97, 101, 1);
+            font-weight: 500;
+            font-size: 1.2em;
+        }
+
+        .detail-footer {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            .price {
+                font-weight: 700;
+                font-size: 1rem;
+                color: rgba(36, 39, 49, 1);
+            }
+            .vr {
+                border-right: 1px solid rgba(236, 236, 236, 1);
+            }
+            .hours {
+                font-weight: 500;
+                color: rgba(95, 97, 101, 1);
+            }
+        }
+    }
+}
