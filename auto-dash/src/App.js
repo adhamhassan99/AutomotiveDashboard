@@ -5,6 +5,7 @@ import AssetsPage from "./Pages/AssetsPage/AssetsPage.component";
 import BookingPage from "./Pages/BookingPage/BookingPage.component";
 import CalenderPage from "./Pages/CalendarPage/CalendarPage.component";
 import DashboardPage from "./Pages/Dashboard/DashboardPage.component";
+import MessagesPage from "./Pages/MessagesPage/MessagesPage.component";
 import SellPage from "./Pages/SellPage/SellPage.component";
 import ServicesPage from "./Pages/ServicesPage/ServicesPage.component";
 import SettingsPage from "./Pages/SettingsPage/SettingsPage.component";
@@ -34,7 +35,7 @@ function App() {
           <Route exact path="buycars" element={<BookingPage />} />
           <Route exact path="services" element={<ServicesPage />} />
           <Route exact path="calendar" element={<CalenderPage />} />
-          <Route exact path="Messages" element={<CalenderPage />} />
+          <Route exact path="Messages" element={<MessagesPage />} />
 
           <Route exact path="settings" element={<SettingsPage />}>
             <Route exact path="details" element={<Profile />} />

@@ -1,0 +1,19 @@
+.chat-header-container {
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(245, 244, 246, 1);
+    .icon-btn-container {
+        display: flex;
+        align-items: flex-start;
+
+        button {
+            border: none;
+            background-color: transparent;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

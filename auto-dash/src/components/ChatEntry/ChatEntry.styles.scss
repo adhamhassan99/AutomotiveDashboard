@@ -1,0 +1,41 @@
+.chat-entry-container {
+    display: flex;
+    justify-content: space-between;
+
+    .image-name-container {
+        display: flex;
+        gap: 20px;
+        .img-container {
+            img {
+                border-radius: 50%;
+            }
+        }
+
+        .title-msg {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .name {
+                font-weight: 500;
+                font-size: 1.2em;
+            }
+            .msg {
+                width: 200px;
+                font-size: 1em;
+                color: rgba(169, 171, 173, 1);
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+
+    .timestamp-container {
+        .timestamp {
+            font-weight: 500;
+            color: rgba(169, 171, 173, 1);
+            font-size: 0.9em;
+        }
+    }
+}

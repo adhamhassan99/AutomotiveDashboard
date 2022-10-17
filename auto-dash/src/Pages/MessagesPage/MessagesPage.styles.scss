@@ -1,0 +1,10 @@
+.messages-page-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin: 15px 30px;
+    padding: 30px;
+    background-color: white;
+    overflow-y: auto;
+    gap: 2vw;
+}
