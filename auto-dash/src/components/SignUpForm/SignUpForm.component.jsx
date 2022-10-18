@@ -59,59 +59,56 @@ const SignUpForm = () => {
       console.log(error);
     }
   };
-  if (!loggedIn) {
-    return <Navigate to="/auth/signin" replace />;
-  } else {
-    return (
-      <div className="sign-up-container">
-        <form className="form-container" onSubmit={handleSubmit}>
-          <div className="form-input-container">
-            <FormInput
-              type="text"
-              name="firstName"
-              value={firstName}
-              onChange={handleChange}
-              required
-              label="First Name"
-              placeholder="Adham"
-            />
 
-            <FormInput
-              type="text"
-              name="lastName"
-              value={lastName}
-              onChange={handleChange}
-              required
-              label="Last Name"
-              placeholder="Hassan"
-            />
+  return (
+    <div className="sign-up-container">
+      <form className="form-container" onSubmit={handleSubmit}>
+        <div className="form-input-container">
+          <FormInput
+            type="text"
+            name="firstName"
+            value={firstName}
+            onChange={handleChange}
+            required
+            label="First Name"
+            placeholder="Adham"
+          />
 
-            <FormInput
-              type="email"
-              name="email"
-              value={email}
-              onChange={handleChange}
-              required
-              label="Email"
-              placeholder="email@gmail.com"
-            />
+          <FormInput
+            type="text"
+            name="lastName"
+            value={lastName}
+            onChange={handleChange}
+            required
+            label="Last Name"
+            placeholder="Hassan"
+          />
 
-            <FormInput
-              type="password"
-              name="password"
-              value={password}
-              onChange={handleChange}
-              required
-              label="Password"
-              placeholder="Password"
-            />
-          </div>
-          <RememberMe />
-          <CustomButton signInProvider="primary">Sign Up</CustomButton>
-        </form>
-      </div>
-    );
-  }
+          <FormInput
+            type="email"
+            name="email"
+            value={email}
+            onChange={handleChange}
+            required
+            label="Email"
+            placeholder="email@gmail.com"
+          />
+
+          <FormInput
+            type="password"
+            name="password"
+            value={password}
+            onChange={handleChange}
+            required
+            label="Password"
+            placeholder="Password"
+          />
+        </div>
+        <RememberMe />
+        <CustomButton signInProvider="primary">Sign Up</CustomButton>
+      </form>
+    </div>
+  );
 };
 
 export default SignUpForm;

@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import NavSearch from "./components/NavSearch/NavSearch.component";
 import Profile from "./components/Profile/Profile.component";
 import AssetsPage from "./Pages/AssetsPage/AssetsPage.component";
@@ -15,16 +15,10 @@ import SignInPage from "./Pages/SignInPage/SignInPage.component";
 import SignUp from "./Pages/SignUpPage/SignUp.component";
 
 function App() {
-  // const loggedIn = useSelector((state) => state.user.isLoggedIn);
-
   return (
     <div className="App">
       <Routes>
-        {/* <Route exact path="/test" element={<h1>hello</h1>} /> */}
-
-        <Route path="/" element={<Navigate replace to="/auth/signin" />} />
-
-        <Route path="/auth/signin" element={<SignInPage />} />
+        <Route exact path="/auth/signin" element={<SignInPage />} />
         <Route exact path="/auth/signup" element={<SignUp />} />
 
         <Route path="/home" element={<NavSearch />}>
