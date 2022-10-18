@@ -12,6 +12,7 @@
     .cars-container {
         display: flex;
         gap: 150px;
+        flex-wrap: wrap;
     }
     .offers-container {
         display: flex;

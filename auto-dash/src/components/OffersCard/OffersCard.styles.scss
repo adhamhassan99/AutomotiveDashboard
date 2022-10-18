@@ -56,4 +56,8 @@
         align-items: center;
         color: #72767c;
     }
+
+    @media (max-width: 1150px) {
+        flex-direction: column;
+    }
 }
