@@ -11,6 +11,7 @@ const CarStatisticCard = ({ fuel, km, cost, speed }) => {
           <span className="entry-title">Fuel Usage</span>
           <span className="entry-value">{fuel} Ltr</span>
         </div>
+        <div className="row-entry vr"></div>
         <div className="row-entry">
           <span className="entry-title">KM Driven</span>
           <span className="entry-value">{km} KMs</span>
@@ -21,6 +22,7 @@ const CarStatisticCard = ({ fuel, km, cost, speed }) => {
           <span className="entry-title">Total Cost</span>
           <span className="entry-value">${cost}</span>
         </div>
+        <div className="row-entry vr"></div>
         <div className="row-entry">
           <span className="entry-title">Top Speed</span>
           <span className="entry-value">{speed} KM/h</span>

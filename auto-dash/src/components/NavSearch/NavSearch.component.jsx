@@ -1,4 +1,5 @@
 import React from "react";
+
 import NavBar from "../NavBar/NavBar.component";
 import SideBar from "../SideBar/SideBar.component";
 import "./NavSearch.styles.scss";
@@ -15,6 +16,7 @@ const NavSearch = () => {
     return (
       <div className="page-container">
         <SideBar />
+
         <div className="main-section">
           <NavBar imageUrl={userImg} />
           <Outlet />

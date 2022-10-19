@@ -22,12 +22,18 @@ $prim-blue: #438ffe;
     .statistic-row {
         display: flex;
         justify-content: space-between;
+
+        gap: 20%;
         width: 85%;
 
         .row-entry {
             display: flex;
             flex-direction: column;
             gap: 5px;
+            &.vr {
+                width: 1px;
+                border-left: 1px solid rgba(87, 155, 255, 1);
+            }
         }
     }
 

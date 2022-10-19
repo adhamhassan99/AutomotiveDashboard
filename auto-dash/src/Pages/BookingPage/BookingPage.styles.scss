@@ -20,10 +20,13 @@
             background-image: url("../../Assets/ArrowImg.png");
             background-repeat: no-repeat;
             background-position: calc(100% - 3px) center;
-            background-size: 25px;
+            background-size: 15px;
             &:focus {
                 border: none;
                 outline: none;
+            }
+            &:hover {
+                cursor: pointer;
             }
         }
 
