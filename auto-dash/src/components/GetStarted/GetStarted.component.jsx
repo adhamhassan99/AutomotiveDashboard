@@ -47,9 +47,6 @@ const GetStarted = ({ linkUrl, linkText }) => {
         </CustomButton>
       </div>
       <div className="divider">
-        {/* <hr />
-        <span>or</span>
-        <hr /> */}
         <span className="divider">Or</span>
       </div>
     </div>

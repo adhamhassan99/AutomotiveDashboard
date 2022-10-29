@@ -9,8 +9,10 @@ import SignInForm from "../../components/SignInForm/SignInForm.component";
 const SignInPage = () => {
   return (
     <div className="homepage-container">
-      <GetStarted linkUrl="auth/signup" linkText="Sign up" />
-      <SignInForm />
+      <div className="signin-container">
+        <GetStarted linkUrl="auth/signup" linkText="Sign up" />
+        <SignInForm />
+      </div>
     </div>
   );
 };

@@ -1,12 +1,10 @@
-.homepage-container{
+.homepage-container {
     display: flex;
-    flex-direction: column;
+    height: 100%;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-    
+    .signin-container {
+        display: flex;
+        flex-direction: column;
+    }
 }

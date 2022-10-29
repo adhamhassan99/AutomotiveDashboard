@@ -13,6 +13,7 @@ import SignInPage from "./Pages/SignInPage/SignInPage.component";
 // import { useSelector } from "react-redux";
 
 import SignUp from "./Pages/SignUpPage/SignUp.component";
+import "./App.css";
 
 function App() {
   // const loggedIn = useSelector((state) => state.user.isLoggedIn);
