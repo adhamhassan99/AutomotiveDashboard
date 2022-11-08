@@ -5,9 +5,8 @@ $prim-grey: #acb9c4;
     display: flex;
     flex-direction: column;
     background-color: white;
-    flex: auto;
-    height: 32vh;
-    margin: 20px 0px;
+    width: 100%;
+    margin: 20px 10px;
     border-radius: 15px;
     padding: 15px 30px;
     box-sizing: border-box;
@@ -25,6 +24,9 @@ $prim-grey: #acb9c4;
                 padding: 3px 10px;
                 border-radius: 15px;
                 color: white;
+                &.orangeColor {
+                    background-color: #ff764c;
+                }
             }
             button {
                 border: none;

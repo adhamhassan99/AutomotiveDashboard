@@ -1,14 +1,12 @@
-.custom-link-container{
-    
-
-   a{
-    color:#5F6165;
-    font-size: 1.1rem ;
-    font-weight: 500;
-   }
-    .option{
+.custom-link-container {
+    a {
+        color: #5f6165;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .option {
         display: flex;
         align-items: center;
-        gap: 10px
+        gap: 10px;
     }
 }

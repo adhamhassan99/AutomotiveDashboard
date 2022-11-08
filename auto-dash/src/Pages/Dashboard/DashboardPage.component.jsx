@@ -12,6 +12,8 @@ import { getUID, getUserStatus } from "../../features/user/userSlice";
 
 import "./DashboardPage.styles.scss";
 import Statistics from "../../components/Statistics/Statistics.component";
+import BarChart from "../../components/BarChart/BarChart.component";
+import LineAreaChart from "../../components/LineAreaChart/LineAreaChart.component";
 
 const DashboardPage = () => {
   return (
@@ -19,8 +21,12 @@ const DashboardPage = () => {
       <div className="dash-main-section">
         <MainContent />
         <div className="statistics-section">
-          <Statistics description="256 Miles" title="Miles" />
-          <Statistics description="256 Miles" title="Miles" />
+          <Statistics description="256 Miles" title="Miles">
+            <BarChart />
+          </Statistics>
+          <Statistics orange description="256 Miles" title="Miles">
+            <LineAreaChart />
+          </Statistics>
         </div>
         <div className="rcmnd-cars">
           {RecommendedData.map((car) => (
