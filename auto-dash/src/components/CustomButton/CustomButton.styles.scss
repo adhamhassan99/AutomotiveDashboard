@@ -7,6 +7,7 @@ $facebook-blue: #4776d0;
 .button {
   display: flex;
   align-items: center;
+  flex-grow: 1;
   gap: 10px;
   justify-content: center;
   border-radius: 8px;

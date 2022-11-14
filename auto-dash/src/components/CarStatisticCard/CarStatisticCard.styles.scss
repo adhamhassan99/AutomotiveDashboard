@@ -16,7 +16,12 @@ $prim-blue: #438ffe;
     padding-top: 30px;
 
     .entry-title {
-        opacity: 70%;
+        font-weight: 500;
+        color: #c6dcfc;
+    }
+    .entry-value {
+        font-size: 1.2rem;
+        font-weight: 700;
     }
 
     .statistic-row {
@@ -43,9 +48,8 @@ $prim-blue: #438ffe;
         .img-element {
             position: absolute;
             top: 18vh;
-            left: -8vw;
+            right: -160px;
             scale: 120%;
-            margin: auto;
         }
     }
 }

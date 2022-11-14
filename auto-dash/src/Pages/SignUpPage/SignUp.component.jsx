@@ -6,9 +6,11 @@ import "./SignUp.styles.scss";
 
 const SignUp = () => {
   return (
-    <div className="sign-up-page-container">
-      <GetStarted linkUrl="auth/signin" linkText="Sign in" />
-      <SignUpForm />
+    <div className="parent-container">
+      <div className="sign-up-page-container">
+        <GetStarted linkUrl="auth/signin" linkText="Sign in" />
+        <SignUpForm />
+      </div>
     </div>
   );
 };
