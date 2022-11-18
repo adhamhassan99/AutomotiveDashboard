@@ -9,9 +9,11 @@
     .left-col {
         display: flex;
         gap: 10px;
+        flex: 1;
         input {
             border: none;
             font-size: 1.2rem;
+            width: 100%;
             &:focus {
                 outline: none;
             }

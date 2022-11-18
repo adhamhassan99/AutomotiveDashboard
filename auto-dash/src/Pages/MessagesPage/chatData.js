@@ -53,15 +53,13 @@ const chatData = [
     messages: [
       {
         id: 1,
-        content:
-          "Hi, I hope you are doing well, yesterday you have gave a pen This very nice, i am very happy for this.yesterday you have gave a pen This very nice",
+        content: "hey there",
         timeStamp: "4:30 PM",
         type: "reciever",
       },
       {
         id: 2,
-        content:
-          "yea I’m well, Thank you, i am very happy for this.yesterday you have gave a pen This very nice",
+        content: "Hello , How are you?",
         timeStamp: "4:40 PM",
         type: "sender",
       },
@@ -90,7 +88,7 @@ const chatData = [
   {
     id: 3,
     imageUrl: contactPic3,
-    contactName: "Desian Tam",
+    contactName: "Julian King",
     isPinned: true,
     messages: [
       {
@@ -132,8 +130,8 @@ const chatData = [
   {
     id: 4,
     imageUrl: contactPic,
-    contactName: "Killan James",
-    isPinned: true,
+    contactName: "henery",
+    isPinned: false,
     messages: [
       {
         id: 1,
@@ -250,7 +248,7 @@ const chatData = [
       },
       {
         id: 5,
-        content: "Random Msg to Test my App",
+        content: "Random Msg to Test my Apppppppp",
         timeStamp: "7:50 PM",
         type: "sender",
       },

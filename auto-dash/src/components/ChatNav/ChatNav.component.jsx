@@ -8,11 +8,19 @@ import { ReactComponent as MsgIcon } from "../../Assets/newMsg.svg";
 import { useState } from "react";
 import ChatEntry from "../ChatEntry/ChatEntry.component";
 
-const ChatNav = ({ messages }) => {
+const ChatNav = ({ messages, setActiveChatMsg }) => {
   const [searchQuery, setSearchQuery] = useState("");
+  const [messagesArray, setMessagesArray] = useState(messages);
   const handleChange = (e) => {
     setSearchQuery(e.target.value);
   };
+
+  var FilteredArray = messagesArray.filter(
+    (entry) =>
+      entry.contactName.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      entry.contactName.toUpperCase().includes(searchQuery.toUpperCase())
+  );
+  console.log("new array", FilteredArray);
   return (
     <div className="chat-nav-container">
       <div className="header">
@@ -36,8 +44,14 @@ const ChatNav = ({ messages }) => {
             <PinnedIcon />
             <span>Pinned</span>
           </div>
-          {messages.map((entry) => {
-            return <ChatEntry key={entry.id} {...entry} />;
+          {FilteredArray.map((entry) => {
+            return (
+              <ChatEntry
+                setActiveChatMsg={() => setActiveChatMsg(entry)}
+                key={entry.id}
+                {...entry}
+              />
+            );
           })}
         </div>
         <div className="all-messages msg-container">
@@ -45,7 +59,7 @@ const ChatNav = ({ messages }) => {
             <AllIcon />
             <span>All Messages</span>
           </div>
-          {messages.map((entry) => {
+          {FilteredArray.map((entry) => {
             return <ChatEntry key={entry.id} {...entry} />;
           })}
         </div>

@@ -1,6 +1,14 @@
 .chat-entry-container {
     display: flex;
     justify-content: space-between;
+    padding: 10px 20px;
+    &.active {
+        background-color: rgba(215, 215, 215, 0.178);
+    }
+    &:hover {
+        background-color: rgba(215, 215, 215, 0.178);
+        cursor: pointer;
+    }
 
     .image-name-container {
         display: flex;
