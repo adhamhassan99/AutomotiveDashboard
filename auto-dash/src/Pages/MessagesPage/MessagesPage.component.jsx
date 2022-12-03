@@ -6,12 +6,10 @@ import ActiveChat from "../../components/ActiveChat/ActiveChat.component";
 
 const MessagesPage = () => {
   const [chatMsg, setChatMsg] = useState(chatData);
-  const [activeChatMsg, setActiveChatMsg] = useState(chatMsg[0]);
-
   return (
     <div className="messages-page-container">
-      <ChatNav setActiveChatMsg={setActiveChatMsg} messages={chatMsg} />
-      <ActiveChat {...activeChatMsg} />
+      <ChatNav messages={chatMsg} />
+      <ActiveChat {...chatMsg[0]} />
     </div>
   );
 };
